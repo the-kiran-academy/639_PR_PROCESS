@@ -67,8 +67,33 @@ public class Operation {
 	}
 
 	public static void countConsonants() {
+	 
+	        System.out.print("Enter a string: ");
+	        String input = scanner.nextLine();
 
-	}
+	        int consonantCount = 0;
+
+	        
+	        input = input.toLowerCase();
+
+	        
+	        for (int i = 0; i < input.length(); i++) {
+	            char ch = input.charAt(i);
+
+	           
+	            if (ch >= 'a' && ch <= 'z') {
+	               
+	                if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u') {
+	                    consonantCount++;
+	                }
+	            }
+	        }
+
+	        System.out.println("Number of consonants: " + consonantCount);
+	    }
+	
+
+	
 
 	public static void countWords() {
 
