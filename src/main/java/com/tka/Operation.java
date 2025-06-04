@@ -60,6 +60,28 @@ public class Operation {
 
 	public static void swapStrings() {
 
+		System.out.print("Enter first string: ");
+		String str1 = scanner.nextLine();
+
+		System.out.print("Enter second string: ");
+		String str2 = scanner.nextLine();
+
+		System.out.println("\nBefore Swap:");
+		System.out.println("str1 = " + str1);
+		System.out.println("str2 = " + str2);
+
+		String temp = str1;
+		str1 = str2;
+		str2 = temp;
+
+		System.out.println("\nAfter Swap:");
+		System.out.println("str1 = " + str1);
+		System.out.println("str2 = " + str2);
+
+		System.out.println("-------------------------------------------------");
+		
+		scanner.close();
+
 	}
 
 	public static void countVowels() {
