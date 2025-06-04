@@ -38,10 +38,24 @@ public class Operation {
 
 	}
 
-	public static void perfect() {
-
+	public static void perfect(){
+		 System.out.print("Enter a number: ");
+	        int number = scanner.nextInt();
+	        int sum = 0;
+	        // Calculate sum of proper divisors
+	        for (int i=1;i<=number/2;i++){
+	            if (number % i == 0) {
+	                sum += i;
+	            }
+	        }
+	        // Check if the number is perfect
+	        if(sum==number){
+	            System.out.println(number + " is a Perfect Number.");
+	        } else{
+	            System.out.println(number + " is not a Perfect Number.");
+	        }
+	        System.out.println("-------------------------------------------------");
 	}
-
 	public static void sumOfDigits() {
 
 	}
