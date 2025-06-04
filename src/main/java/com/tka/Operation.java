@@ -23,8 +23,22 @@ public class Operation {
 	}
 
 	public static void factorial() {
+		//Rutuja Bhosale
+		
+		 System.out.print("Enter a number to find factorial: ");
+	        int num = scanner.nextInt();
 
-	}
+	        int factorial = 1;
+
+	        for (int i = 1; i <= num; i++) {
+	            factorial = factorial * i;
+	        }
+
+	        System.out.println("The factorial of " + num + " is: " + factorial);
+	       
+	    }
+
+	
 
 	public static void prime() {
 
@@ -254,7 +268,36 @@ public class Operation {
 	}
 
 	public static void countCharacters() {
+
 		// Rutuja Bhosale
+
+		System.out.print("Enter a string: ");
+		String input = scanner.nextLine();
+
+		int vowels = 0, consonants = 0, digits = 0, specialChars = 0;
+
+		for (int i = 0; i < input.length(); i++) {
+			char ch = Character.toLowerCase(input.charAt(i));
+
+			if (Character.isLetter(ch)) {
+				if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+					vowels++;
+				} else {
+					consonants++;
+				}
+			} else if (Character.isDigit(ch)) {
+				digits++;
+			} else if (!Character.isWhitespace(ch)) {
+				specialChars++;
+			}
+		}
+
+		System.out.println("Total characters: " + input.length());
+		System.out.println("Vowels: " + vowels);
+		System.out.println("Consonants: " + consonants);
+		System.out.println("Digits: " + digits);
+		System.out.println("Special characters: " + specialChars);
+		System.out.println("-----------------------------------------------------------------------");
 
 	}
 
@@ -296,7 +339,7 @@ public class Operation {
 	}
 
 	public static void primesInRange() {
-		
+
 	}
 
 	public static void strongNumber() {
@@ -308,13 +351,47 @@ public class Operation {
 	}
 
 	public static void printPattern() {
-		
+
 	}
 
 	public static void harshadNumber() {
 	}
 
 	public static void secondLargest() {
+
+
+		System.out.print("Enter how many numbers: ");
+		int n = scanner.nextInt();
+
+		int[] num = new int[n];
+		System.out.println("Enter " + n + " numbers:");
+		for (int i = 0; i < n; i++) {
+			num[i] = scanner.nextInt();
+		}
+
+		int max = num[0];
+		int secondMax = Integer.MIN_VALUE;
+
+		for (int i = 1; i < num.length; i++) {
+			if (num[i] > max) {
+				secondMax = max;
+				max = num[i];
+			} else if (num[i] > secondMax && num[i] != max) {
+				secondMax = num[i];
+			}
+		}
+
+		System.out.println("Greatest number is: " + max);
+
+		if (secondMax == Integer.MIN_VALUE) {
+			System.out.println("Second largest number not found (all numbers may be equal).");
+		} else {
+			System.out.println("Second largest number is: " + secondMax);
+			System.out.println("--------------------------------------------------------------------------");
+		}
+
+
+
 	}
 
 	public static void compareArrays() {
