@@ -136,6 +136,19 @@ public class Operation {
 
 	public static void reverseNumber() {
 
+		System.out.print("Enter a number: ");
+		int number = scanner.nextInt();
+		int reversed = 0;
+
+		while (number != 0) {
+			int digit = number % 10; // Get last digit
+			reversed = reversed * 10 + digit; // Append digit
+			number /= 10; // Remove last digit
+		}
+
+		System.out.println("Reversed number: " + reversed);
+		
+		System.out.println("------------------------------------------------------");
 	}
 
 	public static void swapNumbers() {
