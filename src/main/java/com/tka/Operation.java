@@ -32,6 +32,21 @@ public class Operation {
 
 	public static void fibonacci() {
 
+	
+		int n = scanner.nextInt();
+        int first = 0, second = 1;
+
+        System.out.println("Fibonacci Series up to " + n + " terms:");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(first + " ");
+
+            int next = first + second;
+            first = second;
+            second = next;
+        }
+        System.out.println("Fibonacci Series ");
+        System.out.println("--------------------------------------------------");
 	}
 
 	public static void armstrong() {
