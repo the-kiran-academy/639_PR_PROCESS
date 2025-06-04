@@ -202,8 +202,21 @@ public class Operation {
 	}
 
 	public static void countWords() {
+		  System.out.print("Enter a sentence to count the words: ");
+	        String input = scanner.nextLine().trim();
 
-	}
+	        if (input.isEmpty()) {
+	            System.out.println("No words found.");
+	        } else {
+	            String[] words = input.split("\\s+"); // split by one or more spaces
+	            System.out.println("Total number of words: " + words.length);
+	        }
+
+	        System.out.println("-------------------------------------------------");
+	    }
+
+
+	
 
 	public static void countCharacters() {
 
