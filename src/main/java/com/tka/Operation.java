@@ -43,6 +43,19 @@ public class Operation {
 	}
 
 	public static void sumOfDigits() {
+		 System.out.print("Enter a number: ");
+	        int number = scanner.nextInt();
+	        int sum = 0;
+
+	        while (number != 0) {
+	            int digit = number % 10;
+	            sum += digit;
+	            number /= 10;
+	        }
+
+	        System.out.println("Sum of digits: " + sum);
+	        
+	        System.out.println("----------------------------");
 
 	}
 
