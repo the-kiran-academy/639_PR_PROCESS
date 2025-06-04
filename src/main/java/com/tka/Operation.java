@@ -3,6 +3,15 @@ package com.tka;
 public class Operation {
 	
 	public static void pallindrome() {
+		String str = "madam"; // Example string
+		String reversedStr = new StringBuilder(str).reverse().toString();
+		if (str.equals(reversedStr)) {
+			System.out.println(str + " is a palindrome.");
+		} else {
+			System.out.println(str + " is not a palindrome.");
+		}
+		
+		System.out.println("-------------------------------------------------");
 		
 	}
 	
