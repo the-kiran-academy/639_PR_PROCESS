@@ -105,7 +105,19 @@ public class Operation {
 	}
 
 	public static void reverseString() {
+		System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
 
+        // Reverse the string
+        String reversed = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed += input.charAt(i);
+        }
+
+        // Output the reversed string
+        System.out.println("Reversed string: " + reversed);
+
+        System.out.println("-------------------------");
 	}
 
 	public static void reverseNumber() {
