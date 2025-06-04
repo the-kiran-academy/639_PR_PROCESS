@@ -77,7 +77,7 @@ public class Operation {
 			}
 		}
 		System.out.println("Number of consonants: " + count);
-		scanner.close();
+		
 		System.out.println("-------------------------------------------------");
 
 	}
