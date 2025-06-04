@@ -147,6 +147,18 @@ public class Operation {
 	}
 
 	public static void countConsonants() {
+		System.out.print("Enter a string: ");
+		String input = scanner.nextLine().toLowerCase();
+		int count = 0;
+		for (int i = 0; i < input.length(); i++) {
+			char ch = input.charAt(i);
+			if (Character.isLetter(ch) && !"aeiou".contains(String.valueOf(ch))) {
+				count++;
+			}
+		}
+		System.out.println("Number of consonants: " + count);
+		
+		System.out.println("-------------------------------------------------");
 
 	}
 
