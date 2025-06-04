@@ -44,7 +44,24 @@ public class Test {
 
 		// Test count words
 		Operation.countWords();
+		
+		// ============ new Opeartion ===============
 
+		Operation.leapYear();
+		Operation.gcdLcm();
+		Operation.anagram();
+		Operation.findMinMaxInArray();
+		Operation.sortArray();
+		Operation.pangram();
+		Operation.duplicateCharacters();
+		Operation.armstrongInRange();
+		Operation.primesInRange();
+		Operation.strongNumber();
+		Operation.sumOfN();
+		Operation.printPattern();
+		Operation.harshadNumber();
+		Operation.secondLargest();
+		Operation.compareArrays();
 	}
 
 }

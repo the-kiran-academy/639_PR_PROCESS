@@ -1,1 +1,37 @@
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# Maven specific files
 /target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+*.iml
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build output
+bin/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Ignore IntelliJ or other IDE settings if used
+out/
+
+# Java-specific
+*.class
+
+# Eclipse local history
+.metadata/
