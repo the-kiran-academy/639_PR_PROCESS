@@ -264,7 +264,7 @@ public class Operation {
 	}
 
 	public static void leapYear() {
-		//akankshaj29
+		// akankshaj29
 	}
 
 	public static void gcdLcm() {
@@ -296,19 +296,31 @@ public class Operation {
 	}
 
 	public static void primesInRange() {
-		
+
 	}
 
 	public static void strongNumber() {
 		// pravinjrakte
 	}
 
-	public static void sumOfN() {	
+	public static void sumOfN() {
+
 		// Pratik-Patil-7
+
+		System.out.print("Enter a number: ");
+		int number = scanner.nextInt();
+
+		int sum = 0;
+		while (number != 0) {
+			sum += number % 10;
+			number = number / 10;
+		}
+
+		System.out.println("Sum of digits: " + sum);
 	}
 
 	public static void printPattern() {
-		
+
 	}
 
 	public static void harshadNumber() {
