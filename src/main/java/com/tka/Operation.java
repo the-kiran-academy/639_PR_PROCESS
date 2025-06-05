@@ -1,5 +1,6 @@
 package com.tka;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Operation {
@@ -280,7 +281,19 @@ public class Operation {
 	}
 
 	public static void sortArray() {
-		// Ashish-1836
+		
+
+		
+		        int[] numbers = {5, 2, 9, 1, 3};
+
+		        // Sort the array
+		        Arrays.sort(numbers);
+
+		        // Print the sorted array
+		        System.out.println("Sorted array: " + Arrays.toString(numbers));
+		    
+		
+
 	}
 
 	public static void pangram() {
