@@ -364,7 +364,7 @@ public class Operation {
 	        } else {
 	            System.out.println(originalNum + " is not an Armstrong number.");
 	        }
-	        System.out.println("----------------------------------------")
+	        System.out.println("----------------------------------------");
 	}
 
 	public static void primesInRange() {
