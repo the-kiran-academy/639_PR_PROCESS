@@ -273,7 +273,27 @@ public class Operation {
 	}
 
 	public static void anagram() {
-		// amitnaik9922
+
+		System.out.println("Enter a String value to check whether palindrome or not");
+
+		String s = scanner.nextLine();
+
+		boolean result = true;
+
+		for (int i = 0; i < s.length() / 2; i++) {
+
+			if (s.charAt(i) == s.charAt(s.length() - 1 - i)) {
+
+				continue;
+			} else
+				result = false;
+
+		}
+
+		if (result) {
+			System.out.println(s + " is palindrome");
+		} else
+			System.out.println(s + " is not a palindrome");
 	}
 
 	public static void findMinMaxInArray() {
@@ -356,9 +376,7 @@ public class Operation {
 	}
 
 	public static void sumOfN() {
-
 		// Pratik-Patil-7
-
 		System.out.print("Enter a number: ");
 		int number = scanner.nextInt();
 
