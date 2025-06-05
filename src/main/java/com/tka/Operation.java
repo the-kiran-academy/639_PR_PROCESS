@@ -23,19 +23,7 @@ public class Operation {
 	}
 
 	public static void factorial() {
-		//Rutuja Bhosale
 		
-		 System.out.print("Enter a number to find factorial: ");
-	        int num = scanner.nextInt();
-
-	        int factorial = 1;
-
-	        for (int i = 1; i <= num; i++) {
-	            factorial = factorial * i;
-	        }
-
-	        System.out.println("The factorial of " + num + " is: " + factorial);
-	       
 	    }
 
 	
@@ -358,39 +346,6 @@ public class Operation {
 	}
 
 	public static void secondLargest() {
-
-
-		System.out.print("Enter how many numbers: ");
-		int n = scanner.nextInt();
-
-		int[] num = new int[n];
-		System.out.println("Enter " + n + " numbers:");
-		for (int i = 0; i < n; i++) {
-			num[i] = scanner.nextInt();
-		}
-
-		int max = num[0];
-		int secondMax = Integer.MIN_VALUE;
-
-		for (int i = 1; i < num.length; i++) {
-			if (num[i] > max) {
-				secondMax = max;
-				max = num[i];
-			} else if (num[i] > secondMax && num[i] != max) {
-				secondMax = num[i];
-			}
-		}
-
-		System.out.println("Greatest number is: " + max);
-
-		if (secondMax == Integer.MIN_VALUE) {
-			System.out.println("Second largest number not found (all numbers may be equal).");
-		} else {
-			System.out.println("Second largest number is: " + secondMax);
-			System.out.println("--------------------------------------------------------------------------");
-		}
-
-
 
 	}
 
