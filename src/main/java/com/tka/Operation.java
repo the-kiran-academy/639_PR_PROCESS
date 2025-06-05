@@ -324,7 +324,25 @@ public class Operation {
 	}
 
 	public static void harshadNumber() {
-	}
+		
+        int num = 18; // you can change this number to test others
+        int sum = 0;
+        int temp = num;
+
+        // Calculate sum of digits
+        while (temp > 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+
+        // Check if the number is divisible by the sum of digits
+        if (num % sum == 0) {
+            System.out.println(num + " is a Harshad (Niven) number.");
+        } else {
+            System.out.println(num + " is NOT a Harshad (Niven) number.");
+        }
+    }
+	
 
 	public static void secondLargest() {
 	}
