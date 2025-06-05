@@ -285,6 +285,27 @@ public class Operation {
 
 	public static void pangram() {
 		// saurabh27k
+		System.out.println("Enter a sentence:");
+		String input = scanner.nextLine().toLowerCase();
+		boolean[] seen = new boolean[26];
+
+		for (int i = 0; i < input.length(); i++) {
+			char ch = input.charAt(i);
+			if (ch >= 'a' && ch <= 'z') {
+				seen[ch - 'a'] = true;
+			}
+		}
+
+		boolean isPangram = true;
+		for (boolean b : seen) {
+			if (!b) {
+				isPangram = false;
+				break;
+			}
+		}
+
+		System.out.println(isPangram ? "The sentence is a pangram." : "The sentence is NOT a pangram.");
+
 	}
 
 	public static void duplicateCharacters() {
