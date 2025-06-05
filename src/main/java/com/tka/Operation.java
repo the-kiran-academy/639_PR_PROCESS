@@ -1,5 +1,6 @@
 package com.tka;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Operation {
@@ -300,11 +301,44 @@ public class Operation {
 	}
 
 	public static void sortArray() {
-		// Ashish-1836
+		
+
+		
+		        int[] numbers = {5, 2, 9, 1, 3};
+
+		        // Sort the array
+		        Arrays.sort(numbers);
+
+		        // Print the sorted array
+		        System.out.println("Sorted array: " + Arrays.toString(numbers));
+		    
+		
+
 	}
 
 	public static void pangram() {
 		// saurabh27k
+		System.out.println("Enter a sentence:");
+		String input = scanner.nextLine().toLowerCase();
+		boolean[] seen = new boolean[26];
+
+		for (int i = 0; i < input.length(); i++) {
+			char ch = input.charAt(i);
+			if (ch >= 'a' && ch <= 'z') {
+				seen[ch - 'a'] = true;
+			}
+		}
+
+		boolean isPangram = true;
+		for (boolean b : seen) {
+			if (!b) {
+				isPangram = false;
+				break;
+			}
+		}
+
+		System.out.println(isPangram ? "The sentence is a pangram." : "The sentence is NOT a pangram.");
+
 	}
 
 	public static void duplicateCharacters() {
@@ -313,6 +347,24 @@ public class Operation {
 
 	public static void armstrongInRange() {
 		// nilesh-chavan-07
+		 System.out.print("Enter a number: ");
+	        int num = scanner.nextInt();
+	        int originalNum = num;
+	        int result = 0;
+	        int digits = String.valueOf(num).length();
+
+	        while (num != 0) {
+	            int digit = num % 10;
+	            result += Math.pow(digit, digits);
+	            num /= 10;
+	        }
+
+	        if (result == originalNum) {
+	            System.out.println(originalNum + " is an Armstrong number.");
+	        } else {
+	            System.out.println(originalNum + " is not an Armstrong number.");
+	        }
+	        System.out.println("----------------------------------------")
 	}
 
 	public static void primesInRange() {
@@ -325,6 +377,16 @@ public class Operation {
 
 	public static void sumOfN() {
 		// Pratik-Patil-7
+		System.out.print("Enter a number: ");
+		int number = scanner.nextInt();
+
+		int sum = 0;
+		while (number != 0) {
+			sum += number % 10;
+			number = number / 10;
+		}
+
+		System.out.println("Sum of digits: " + sum);
 	}
 
 	public static void printPattern() {
