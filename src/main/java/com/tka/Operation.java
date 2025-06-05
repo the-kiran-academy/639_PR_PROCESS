@@ -293,6 +293,24 @@ public class Operation {
 
 	public static void armstrongInRange() {
 		// nilesh-chavan-07
+		 System.out.print("Enter a number: ");
+	        int num = scanner.nextInt();
+	        int originalNum = num;
+	        int result = 0;
+	        int digits = String.valueOf(num).length();
+
+	        while (num != 0) {
+	            int digit = num % 10;
+	            result += Math.pow(digit, digits);
+	            num /= 10;
+	        }
+
+	        if (result == originalNum) {
+	            System.out.println(originalNum + " is an Armstrong number.");
+	        } else {
+	            System.out.println(originalNum + " is not an Armstrong number.");
+	        }
+	        System.out.println("----------------------------------------")
 	}
 
 	public static void primesInRange() {
