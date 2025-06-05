@@ -24,8 +24,10 @@ public class Operation {
 	}
 
 	public static void factorial() {
+		
+	    }
 
-	}
+	
 
 	public static void prime() {
 
@@ -255,7 +257,36 @@ public class Operation {
 	}
 
 	public static void countCharacters() {
+
 		// Rutuja Bhosale
+
+		System.out.print("Enter a string: ");
+		String input = scanner.nextLine();
+
+		int vowels = 0, consonants = 0, digits = 0, specialChars = 0;
+
+		for (int i = 0; i < input.length(); i++) {
+			char ch = Character.toLowerCase(input.charAt(i));
+
+			if (Character.isLetter(ch)) {
+				if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+					vowels++;
+				} else {
+					consonants++;
+				}
+			} else if (Character.isDigit(ch)) {
+				digits++;
+			} else if (!Character.isWhitespace(ch)) {
+				specialChars++;
+			}
+		}
+
+		System.out.println("Total characters: " + input.length());
+		System.out.println("Vowels: " + vowels);
+		System.out.println("Consonants: " + consonants);
+		System.out.println("Digits: " + digits);
+		System.out.println("Special characters: " + specialChars);
+		System.out.println("-----------------------------------------------------------------------");
 
 	}
 
@@ -397,6 +428,7 @@ public class Operation {
 	}
 
 	public static void secondLargest() {
+
 	}
 
 	public static void compareArrays() {
